@@ -1,7 +1,5 @@
-package com.email.email_writer;
+package main.java.com.email.email_writer;
 
-import com.email.email_writer.app.EmailGeneratorService;
-import com.email.email_writer.app.EmailRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,11 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/email")
 @AllArgsConstructor
 public class EmailGeneratorController {
-    private final EmailGeneratorService emailGeneratorService;
+    private final com.email.email_writer.app.EmailGeneratorService emailGeneratorService;
     @PostMapping("/generate")
-    public ResponseEntity<String> generateEmail(@RequestBody EmailRequest emailRequest){
+    public ResponseEntity<String> generateEmail(@RequestBody com.email.email_writer.app.EmailRequest emailRequest){
         String response= emailGeneratorService.generateEmailReply(emailRequest);
-        return ResponseEntity.ok("");
-        //51:19
+        return ResponseEntity.ok(response);
     }
 }
