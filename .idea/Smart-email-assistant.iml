@@ -8,5 +8,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:7.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:7.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.42" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:7.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webflux:7.0.3" level="project" />
   </component>
 </module>
